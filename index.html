@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/font-awesome-4.7.0/" rel="stylesheet" />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap"
+      rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Shadow-dev</title>
+
+    <style>
+        .but:hover {
+            animation-name: bounce;
+            animation-duration: 0.8s;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+        }
+        
+        
+        @keyframes bounce {
+            70% {
+                transform: translateY(0%);
+                padding-bottom: 7px;
+            }
+        
+            80% {
+                transform: translateY(-15%);
+            }
+        
+            90% {
+                transform: translateY(0%);
+                padding-bottom: 8px;
+            }
+        
+            95% {
+                transform: translateY(-7%);
+            }
+        
+            97% {
+                transform: translateY(0%);
+                padding-bottom: 9px;
+            }
+        
+            99% {
+                transform: translateY(-3%);
+            }
+        
+            100% {
+                transform: translateY(0);
+                padding-bottom: 9px;
+                opacity: 1;
+            }
+        }
+
+        .sar{
+            filter: blur(2px);
+            transition: 0.2s;
+        }
+          
+        
+          .container:hover .image {
+            opacity: 0.3;
+          }
+          
+          .container:hover .middle {
+            opacity: 1;
+          }
+
+    </style>
+
+  </head>
+
+  <body class= " dig bg-black max-w-[1400px] mx-auto text-white relative z-2 overflow-y-auto " id="class" >
+
+    <main id="body" >
+    
+        <section >
+            <header class="bg-[#f10502] w-full md:max-w-[1200px] md:mx-auto h-[50px] rounded-lg my-4 sticky flex justify-between items-center ">
+
+                <!-- <h3 class="text-[25px] mx-7" >Shadow-dev</h3> -->
+                <marquee style= " behavior:alternate; direction: up;" class="md:max-w-[100px] hidden md:block "><i class="">Shadow-dev</marquee>
+
+                <ul class="flex md:gap-7 gap-2 ml-3 md:ml-0">
+                    <li><a href="#" class="border-b border-black md:p-2">Home</a></li>
+                    <li><a href="#skillz" class=" md:p-2" >Skillz</a></li>
+                    <li><a href="#prt" class=" md:p-2">Portfolio</a></li>
+                </ul>
+                <p href="" class="md:mr-5 mr-4 md:block hidden  but py-1 px-3 md:px-5 bg-black  rounded-xl " onclick='myFunction()' id="open" >Hire Me</p>
+                <p href="" class="md:mr-5 mr-4  but py-1 block md:hidden  px-3 md:px-5 bg-black  rounded-xl " onclick='myFunction2() ' >Hire Me</p>
+
+            </header>
+            <div class="md:max-w-[50%] border  md:hidden ">
+                <marquee style= " behavior:alternate; direction: up;" ><i class="">Shadow-dev</marquee>
+            </div>
+
+        <main class="md:my-[50px] my-[20px]  p-3 md:p-6 flex md:flex-row flex-col justify-between " >
+
+            <div class="max-w-[500px] p-2 md:p-3 my-auto md:ml-9 ">
+
+                <h1 class="md:text-[70px] text-[30px] text-[#f10502]  ">About me</h1>
+
+                <p class="py-2 leading-8">I'm <span class="text-[#f10502]">Fajumo Olatunde Sunkanmi</span>, A full-stack Web developer with over 3 years of experience in web development. I offer a good user experience in supporting the visual aspect of the website i.e Front-end development. I am not just reliable but also a competent developer who offers good content,Layout and good web templates.
+
+            <div class="max-w-[50%] md:max-w-[30%] my-6" >
+                <p onclick='myFunction()' class=" mr-5 but py-1 hidden md:block text-center px-5 bg-[#f10502]  rounded-xl ">Contact</p> 
+
+                <p onclick='myFunction2()' class="block mr-5 but py-1 md:hidden  text-center px-5 bg-[#f10502]  rounded-xl ">Contact</p> 
+            </div>
+            
+            </div>
+
+            <div class=" p-3 md:p-9 rounded-full  relative ">
+                <img  src="./images/meee.JPG" class="md:rounded-[70px] rounded-2xl" height="600px" width="600px"  alt="">
+            </div>
+
+        </main>
+
+        </section>
+
+    <span class="mt-[10px]" id="skillz"></span>
+
+        <section class="mx-auto md:ml-4rem" >
+            <h1 class="md:max-w-[700px] max-w-[400px] text-[#f10502] mb-[30px] md:mt-0 mx-auto py-[30px] md:py-[10px] text-center text-[30px] md:text-[48px] px-[30px] md:px-[60px] font-bold">My Skill Sets</h1>
+            
+            <div class=" flex flex-1 flex-col md:flex-row gap-3 mx-4 md:mx-10 ">
+
+                <div class="relative flex flex-col  md:after:content-[''] after:h-[83.33%] after:w-[1px] md:after:bg-[#f10502] after:absolute after:right-[-10px] justify-center items-center max-w-[400px]  p-4  md:mx-5">
+                    <img src="./images/html.png" alt="" class="">
+
+                    <h2 class="text-[25px] md:text-[35px] text-center px-2 md:px-5 mt-3 leading-0">HTML </h2>
+
+                    <p class="text-center text-[18px] text-gray-500 py-2 md:py-7 px-3 md:px-3">Expert Knowledge in html syntax and environment to build you the best UI of choice.
+                    </p>
+
+                    <a href="https://html.com" target="_blank" class="but px-6 py-2 border my-6 border-[#f10502] hover:bg-[#f10502] hover:border-white hover:text-white hover:rounded-lg text-500">Learn more</a>
+                </div>
+
+                <div class="relative flex flex-col before:absolute before:top-0 before:content-[''] md:before:w-0  before:w-[90.33%] before:h-[1px] before:bg-[#f10502] md:after:content-[''] after:h-[83.33%] after:w-[1px] md:after:bg-[#f10502] after:absolute after:right-[-16px] justify-center items-center max-w-[400px]  p-3  md:mx-5">
+                    <img src="./images/IMG_1490.JPG" width="90px" alt="" class="rounded-lg">
+
+                    <h2 class="text-[25px] md:text-[35px] text-center px-2 md:px-5 mt-3 leading-0"> Tailwindcss </h2>
+
+                    <p class="text-center text-[18px] text-gray-500 py-2 md:py-7 px-3 md:px-2">Expert Knowledge in Web styling using tailwindcss to get your website the best look and apperance.
+                    </p>
+
+                    <a href="https://tailwindcss.com" target="_blank" class="but px-6 py-2 border my-6 border-[#f10502] hover:bg-[#f10502] hover:border-white hover:text-white hover:rounded-lg text-500">Learn more</a>
+                </div>
+                
+                <div class="relative flex flex-col before:absolute before:top-0 before:content-[''] md:before:w-0  before:w-[90.33%] before:h-[1px] before:bg-[#f10502]  justify-center items-center max-w-[400px]  p-4  md:mx-5">
+                    <img src="./images/IMG_1493.PNG" width="90px" alt="" class="rounded-lg">
+
+                    <h2 class="text-[25px] md:text-[35px] text-center px-2 md:px-5 mt-3 leading-0"> Javascript </h2>
+
+                    <p class="text-center text-[18px] text-gray-500 py-2 md:py-7 px-3 md:px-2">Expert Knowledge in Web Development using Javascript to get your website fully functional.
+                    </p>
+
+                    <a href="https://javascript.com" target="_blank" class="but px-6 py-2 border my-6 border-[#f10502] hover:bg-[#f10502] hover:border-white hover:text-white hover:rounded-lg text-500">Learn more</a>
+                </div>
+            </div>
+            
+            <div class=" flex flex-1 flex-col md:flex-row gap-3 mx-4 md:mx-10 ">
+                <div class="relative flex flex-col before:absolute before:top-0 before:content-[''] md:before:w-[83%]  before:w-[83.33%] before:h-[1px] before:bg-[#f10502] md:after:content-[''] after:h-[83.33%] after:w-[1px] md:after:bg-[#f10502] after:absolute after:right-[-22px] justify-center items-center max-w-[400px]  p-4  md:mx-5">
+                    <img src="./images/IMG_1494.PNG" width="170px" alt="" class="rounded-lg">
+
+                    <h2 class="text-[25px] md:text-[35px] text-center px-2 md:px-5 mt-3 leading-0"> PhP </h2>
+
+                    <p class="text-center text-[18px] text-gray-500 py-2 md:py-7 px-3 md:px-2">Expert Knowledge in Web Development using Php to help sync your UI to UX (database).
+                    </p>
+
+                    <a href="https://php.com" target="_blank" class="but px-6 py-2 border my-6 border-[#f10502] hover:bg-[#f10502] hover:border-white hover:text-white hover:rounded-lg text-500">Learn more</a>
+                </div>
+
+                <div class="relative flex flex-col before:absolute before:top-0 before:left-[9%] before:content-[''] md:before:w-[83%]  before:w-[83.33%] before:h-[1px] before:bg-[#f10502] md:after:content-[''] md:after:h-[83.33%] md:after:w-[1px] md:after:bg-[#f10502] md:after:absolute md:after:right-[-40px]  justify-center items-center max-w-[400px]  p-4  md:mx-5">
+
+                    <img src="./images/IMG_1496.PNG" width="170px" alt="" class="rounded-lg">
+
+                    <h2 class="text-[25px] md:text-[35px] text-center px-2 md:px-5 mt-3 leading-0"> React Js </h2>
+
+                    <p class="text-center text-[18px] text-gray-500 py-2 md:py-7 px-3 md:px-2">Expert Knowledge in Web Development using React Js to met up with your React native app website.
+                    </p>
+
+                    <a href="https://reactjs.com" target="_blank" class="but px-6 py-2 border my-6 border-[#f10502] hover:bg-[#f10502] hover:border-white hover:text-white hover:rounded-lg text-500">Learn more</a>
+                </div>
+
+                <div class="relative flex flex-col before:absolute before:top-0 before:content-[''] md:before:w-0  before:w-[83%] before:h-[1px] before:bg-[#f10502] after:absolute after:top-0 after:content-['']  after:w-[90.33%] after:h-[1px] after:bg-[#f10502]  justify-center items-center max-w-[400px]  p-4  md:mx-5">
+                    <img src="./images/IMG_1497.PNG" width="170px" alt="" class="rounded-xl">
+
+                    <h2 class="text-[25px] md:text-[35px] text-center px-2 md:px-5 mt-3 leading-0"> Django </h2>
+
+                    <p class="text-center text-[18px] text-gray-500 py-2 md:py-7 px-3 md:px-2">Expert Knowledge in Web Development using Django to met up with your website backend requirements.
+                    </p>
+
+                    <a href="https://django.com" target="_blank" class="but px-6 py-2 border my-6 border-[#f10502] hover:bg-[#f10502] hover:border-white hover:text-white hover:rounded-lg text-500">Learn more</a>
+                </div>
+            </div>
+        </section>
+
+        <span class="mt-[10px]" id="prt"></span>
+
+        <section class="mt-[30px] md:mt-[70px] max-w-[1200px]  mx-auto ">
+
+            <div class="max-w-[500] mx-auto border-white mb-7">
+                <h1 class="text-center md:text-[48px] text-[30px] text-[#f10502]">My Recent Works</h1>
+            </div>
+
+        <div class="flex md:flex-row flex-col justify-between my-[30px] w-full ">
+
+            <div class="relative " >
+                <div class="container opacity-1 block p-3  h-auto transition-all  "
+            style="backface-visibility: hidden;">
+
+                <img src="images/Screenshot (17).png" width="50%" alt="Avatar" class="image" style="width:100%">
+
+                <div class="middle absolute  top-[60%] md:left-[37%] right-[2px] text-center opacity-0 transition-all " style="transform: translate(-50%, -50%);">
+
+                <div class="flex justify-start flex-col bg-[#f10502] rounded-lg text-white md:py-[10px] px-2 md:px-[25px]">
+                    <h2 class="text-[30px]">Wavvy</h2>
+                    <p class="text-[15px]"><span class="p-1 text-[18px]">Role :</span>Front-End</p>
+                    <p class="text-[15px]" ><span class="p-1 text-[18px]">Skillz :</span>Html,Tailwind,React</p>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="relative" >
+                <div class="container opacity-1 block p-3 h-auto transition-all  "
+            style="backface-visibility: hidden;">
+
+                <img src="images/Screenshot (19).png" width="50%" alt="Avatar" class="image" style="width:100%">
+
+                <div class="middle absolute top-[60%] md:left-[37%] right-[2px]  text-center opacity-0 transition-all " style="transform: translate(-50%, -50%);">
+
+                <div class="flex justify-start flex-col bg-[#f10502] rounded-lg text-white md:py-[10px] px-2 md:px-[25px]">
+                    <h2 class="text-[30px]">BML</h2>
+                    <p class="text-[15px]"><span class="p-1 text-[18px]">Role :</span>Front-End</p>
+                    <p class="text-[15px]" ><span class="p-1 text-[18px]">Skillz :</span>Html,Tailwind,JS</p>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="relative " >
+                <div class="container opacity-1 block p-3 h-auto transition-all  "
+            style="backface-visibility: hidden;">
+
+                <img src="images/Screenshot (18).png" width="50%" alt="Avatar" class="image" style="width:100%">
+
+                <div class="middle absolute  top-[60%] md:left-[37%] right-[2px] text-center opacity-0 transition-all " style="transform: translate(-50%, -50%);">
+
+                <div class="flex justify-start flex-col bg-[#f10502] rounded-lg text-white md:py-[10px] px-2 md:px-[25px]">
+                    <h2 class="text-[30px]">Busiland</h2>
+                    <p class="text-[15px]"><span class="p-1 text-[18px]">Role :</span>Front-End</p>
+                    <p class="text-[15px]" ><span class="p-1 text-[18px]">Skillz :</span>Html,Tailwind,React</p>
+                </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+        </section>
+
+        <section class="mt-[30px] md:mt-[70px] max-w-[1200px]  mx-auto">
+
+            <h1 class="text-center md:text-[48px] text-[30px] text-[#f10502]">My Reviews</h1>
+
+            <div class="flex mt-[20px] md:mt-[50px] flex-col md:flex-row md:p-9 p-4  gap-5 justify-center">
+
+        
+                <div class="md:max-w-[33%] mx-3 border-2 bg-transparent rounded-lg border-[#f10502]">
+    
+                    <div class="py-3  mx-7 mt-4 flex gap-3 md:gap-6" >
+                            <!-- <img src="https://wavvy-next-preview.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpodcast-08.5f696120.jpeg&w=64&q=75" alt=""> -->
+                            <i class="fa fa-user text-[35px] text-[#f10502] p-2 md:p-3 border  rounded-lg "></i>
+                        <div>
+                            <h2 class="text-[15px]"> Dev. Cent </h2>
+                            <h3 class="text-[14px]"> Colleague</h3>
+                        </div>
+                    </div>
+    
+                    <div class="flex flex-col ">
+                        <i class=" fa fa-quote-left text-[30px] ml-7 text-gray-400" aria-hidden="true"></i>
+                        <p class="px-3 mx-3  mt-[-39px] text-[18px] py-5 ">A good, well skilled Colleague with full knowledge of the tech world to met up with your web requirements.</p>
+                    </div>
+                </div>
+                <div class="md:max-w-[33%] mx-3 border-2 bg-transparent rounded-lg border-[#f10502]">
+    
+                    <div class="py-3  mx-7 mt-4 flex gap-3 md:gap-6" >
+                            <!-- <img src="https://wavvy-next-preview.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpodcast-08.5f696120.jpeg&w=64&q=75" alt=""> -->
+                            <i class="fa fa-user text-[35px] text-[#f10502] p-2 md:p-3 border  rounded-lg "></i>
+                        <div>
+                            <h2 class="text-[15px]"> Dare Oni </h2>
+                            <h3 class="text-[14px]"> Customer</h3>
+                        </div>
+                    </div>
+    
+                    <div class="flex flex-col ">
+                        <i class=" fa fa-quote-left text-[30px] ml-7 text-gray-400" aria-hidden="true"></i>
+                        <p class="px-3 mx-3  mt-[-39px] text-[18px] py-5 ">A good and competent web developer that is up to the task and gets things done as fast as you need it to be.</p>
+                    </div>
+                </div>
+                <div class="md:max-w-[33%] mx-3 border-2 bg-transparent rounded-lg border-[#f10502]">
+    
+                    <div class="py-3  mx-7 mt-4 flex gap-3 md:gap-6" >
+                            <!-- <img src="https://wavvy-next-preview.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpodcast-08.5f696120.jpeg&w=64&q=75" alt=""> -->
+                            <i class="fa fa-user text-[35px] text-[#f10502] p-2 md:p-3 border  rounded-lg "></i>
+                        <div>
+                            <h2 class="text-[15px]"> Adeyemo Timothy </h2>
+                            <h3 class="text-[14px]"> Friend</h3>
+                        </div>
+                    </div>
+    
+                    <div class="flex flex-col ">
+                        <i class=" fa fa-quote-left text-[30px] ml-7 text-gray-400" aria-hidden="true"></i>
+                        <p class="px-3 mx-3  mt-[-39px] text-[18px] py-5 ">A good and competent web developer that is up to the task and gets things done as fast as you need it to be.</p>
+                    </div>
+                </div>
+
+
+            
+            </div>
+        </section>
+
+       <div class="mt-[40px] max-w-[80%] ">
+        <marquee style= "behavior:alternate; direction: down;" class=" hidden md:block "><i class=" ">Developed by Shadow-dev</marquee>
+       </div>
+
+    </main>
+    <br><br><br><br><br>
+
+
+    <section class=""  >
+
+        <div style="transform: translate(-50%, -50%);" class="absolute  w-[900px] mx-auto hidden z-88  top-[17%] transition-all left-[50%]  " id="myLinks">
+
+            <div class="flex max-w-[700px] bg-white h-[500px] z-5 mx-auto text-black border  relative  rounded-lg">
+
+                <div class="h-[95%] my-auto ">
+    
+                    <div class="px-2 py-5 mx-3">
+                    
+    
+                        <h2 class="text-[30px] my-3 font-semibold" >Get in touch</h2>
+        
+                        <form action="https://formsubmit.io/send/ae4e24e9-a550-430b-aa7c-5c121bf34fc5" method="post" enctype="multipart/form-data">
+                           <div class="flex gap-3 my-4">   
+                            <input type="text" class="border placeholder:p-3 focus:outline-[#f10502] outline-none placeholder:text-black focus:p-1 " placeholder="Name" name="name" >
+                            <input type="email" class="border placeholder:p-3 focus:outline-[#f10502] outline-none placeholder:text-black focus:p-1 " placeholder="Email" name="email" >
+                           </div>
+                            <input type="text" class="border my-3 p-1 w-full placeholder:p-3 focus:outline-[#f10502] outline-none focus:p-1 placeholder:text-black" name="_subject" placeholder="Subject" >
+                            <br>
+                            <input type="hidden" name="_cc" value="shadowtechhub@email.com">
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+
+                            <textarea name="" id="" cols="10" class="border my-3 p-1 w-full placeholder:p-2 focus:p-1 placeholder:text-black focus:outline-[#f10502] outline-none" rows="5" placeholder='Message' name="message" ></textarea>
+                            <br>    
+        
+                            <input type="submit" class="but my-3 hover:bg-black hover:text-white mr-5 but py-2 px-5 bg-[#f10502] text-black rounded-xl " value="Send message">
+                            
+                        </form>
+                    </div>
+                </div>
+    
+                <div class="w-[40%] bg-[#f10502] h-[530px] absolute top-[-3.5%] left-[60.2%] rounded-lg">
+    
+                    <i class="fa fa-close  float-right text-[25px] p-2 border mx-2 rounded-lg mt-3"onclick="myFunction() " ></i>
+    
+                    <div class="my-[5px]  p-3">
+                        <h2 class="text-[20px] text-white my-4" >Contact Me</h2>
+    
+                        <div class="flex gap-4 justify-between items-center w-full  p-3">
+                            <i  class="fa fa-map text-[25px] text-white p-3 border rounded-xl"></i>
+                            <p class="text-[16px] text-white" >Address: <br>  Surulere, Camp Funaab Alabata, Ogun State.</p>
+                        </div>
+    
+                        <div class="flex gap-4 my-3 justify-between items-center w-full  p-3">
+                            <i  class="fa fa-phone text-[25px] text-white p-3 border rounded-xl"></i>
+                            <p class="text-[16px] text-white" >Phone: <br> (+234) 9093957534 (+234) 9163400793  </p>
+                        </div>
+    
+                        <div class="flex gap-4 my-3 justify-between items-center w-full  p-3">
+                            <i  class="fa fa-send text-[20px] text-white p-3 border rounded-xl"></i>
+                            <p class="text-[15px] text-white" >Email: <br> shadowtechhub@gmail.com </p>
+                        </div>
+    
+                        <div class=" flex gap-3 mt-[60px] mx-5">
+                            <a href=""><i class="fa fa-facebook but text-[20px] text-white py-2 px-3 border rounded-xl"></i></a>
+                            <a href=""> <i class="fa fa-twitter but text-[20px] text-white p-2 border rounded-xl"></i></a>
+                            <a href="https://wa.me/+2349093957534" target="_blank"><i class="fa fa-whatsapp but text-[20px] text-white p-2 border rounded-xl"></i></a>
+                            <a href=""> <i class="fa fa-linkedin but text-[20px] text-white p-2 border rounded-xl"></i></a>
+                        </div>
+    
+                    </div>
+                </div>
+    
+            </div>
+
+        </div>
+
+        <div class=" hidden absolute w-[300px] mx-auto h-[600px] rounded-lg bg-white md:hidden top-[3%] left-[3%]" id="myLinked">
+            <div class="">
+
+                <div class="px-2 py-2 mx-1">
+                    <i class="fa fa-close  float-right text-[15px] text-[#f10502] p-2 border mx-2 rounded-lg mt-3"onclick="myFunction2()" ></i>
+    
+                    <h2 class="text-[30px] my-3 text-black font-semibold" >Get in touch</h2>
+    
+                    <form action="https://formsubmit.io/send/ae4e24e9-a550-430b-aa7c-5c121bf34fc5" method="post">
+                        <input type="text" name="name" class="border my-3  p-1 w-full placeholder:p-3 rounded-lg placeholder:text-black focus:p-1 focus:outline-[#f10502] outline-none " placeholder="Name" >
+                        <input type="email" class="border my-3 p-1 focus:outline-[#f10502] outline-none  w-full placeholder:p-3 rounded-lg placeholder:text-black focus:p-1 " name="email" placeholder="Email" >
+                        <input type="text" class="border my-3 p-1 w-full focus:outline-[#f10502] outline-none rounded-lg placeholder:p-3 focus:p-1 placeholder:text-black" name="_subject" placeholder="Subject" >
+                        <input type="hidden" name="_cc" value="shadowtechhub@email.com">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                        <br>
+                        <textarea name="" id="" cols="5" class="border rounded-lg my-3 p-1 w-full placeholder:p-2 focus:p-1 placeholder:text-black focus:outline-[#f10502] outline-none" name="message" rows="5" placeholder='Message' ></textarea>
+                        <br>    
+    
+                        <input type="submit" class="but my-1 hover:bg-black hover:text-white mr-5 but py-2 px-5 bg-[#f10502] text-black rounded-xl " value="Send message">
+                        
+                    </form>
+                </div>
+                
+            </div>
+            <div class="bg-[#f10502] h-[270px] rounded-lg ">
+    
+                    <div class="my-[2px]  p-1">
+                        <h2 class="text-[20px] text-white my-1 p-2" >Contact Me</h2>
+    
+                        <div class="">
+                            <div class="flex justify-between  items-center w-full my-2  p-1">
+                                <i  class="fa fa-map text-[10px] text-white p-3 border rounded-xl"></i>
+                                <p class="text-[12px] text-white" >Address: <br>  Surulere, Camp Funaab Alabata, Ogun State.</p>
+                            </div>
+
+                            <div class="flex gap-4  items-center w-full my-2  p-1">
+                                <i  class="fa fa-phone text-[10px] text-white p-3 border rounded-xl"></i>
+                                <p class="text-[12px] text-white" >Phone: <br>  (+234) 9093957534 (+234) 9163400793.</p>
+                            </div>
+
+                            <div class="flex gap-4  items-center w-full  my-2 p-1">
+                                <i  class="fa fa-send text-[10px] text-white p-3 border rounded-xl"></i>
+                                <p class="text-[12px] text-white" >Email: <br>  shadowtechhub@gmail.com </p>
+                            </div>
+        
+                        </div>
+
+                        <div class=" flex gap-3 mt-[14px] mx-[60px]">
+                            <a href=""><i class="fa fa-facebook but text-[14px] text-white py-2 px-3 border rounded-xl"></i></a>
+                            <a href=""> <i class="fa fa-twitter but text-[14px] text-white p-2 border rounded-xl"></i></a>
+                            <a href="https://wa.me/+2349093957534" target="_blank"><i class="fa fa-whatsapp but text-[14px] text-white p-2 border rounded-xl"></i></a>
+                            <a href=""> <i class="fa fa-linkedin but text-[14px] text-white p-2 border rounded-xl"></i></a>
+                        </div>
+    
+                    </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+
+    <script src="main.js"></script>
+
+  </body>
+</html>
