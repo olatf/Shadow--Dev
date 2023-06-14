@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap"
       rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -75,16 +76,33 @@
           .container:hover .middle {
             opacity: 1;
           }
+          @keyframes slideIn {
+            from {
+              transform: translateX(-100%);
+              opacity: 0;
+            }
+            to {
+              transform: translateX(0);
+              opacity: 1;
+            }
+          }
+          
+        .slide-in {
+            animation: slideIn 0.5s ease-in-out;
+            transition: opacity 0.5s ease-in-out;
+          }
 
     </style>
 
   </head>
 
-  <body class= " dig bg-black md:max-w-[1400px] mx-auto text-white relative z-2 overflow-y-auto  " id="class" >
+  <body class= "dark bg-black text-white dig md:max-w-[1400px] mx-auto relative z-2 overflow-y-auto  " id="class" >
 
-    <main id="body" class="overflow-x-hidden" >
+    <main id="body" class="overflow-x-hidden dark" >
+
+        <!-- <button onclick="toggleDarkMode()">Toggle Dark Mode</button> -->
     
-        <section >
+        <section class="" >
 
             <header class="bg-[#f10502] w-full md:max-w-[1200px] md:mx-auto h-[50px] rounded-lg my-4 sticky flex justify-between items-center ">
 
@@ -97,7 +115,7 @@
                     <li><a href="#prt" class=" scroll-smooth md:p-2">Portfolio</a></li>
                 </ul>
                 <p href="" class="md:mr-5 mr-4 md:block hidden  but py-1 px-3 md:px-5 bg-black  rounded-xl " onclick='myFunction()' id="open" >Hire Me</p>
-                <p href="" class="md:mr-5 mr-4  but py-1 block md:hidden  px-3 md:px-5 bg-black  rounded-xl " onclick='myFunction2() ' >Hire Me</p>
+                <p href="" class="md:mr-5 mr-4 but py-1 block md:hidden  px-3 md:px-5 bg-black  rounded-xl " onclick='myFunction2() ' >Hire Me</p>
 
             </header>
 
@@ -105,7 +123,17 @@
                 <marquee style= " behavior:alternate; direction: up;" ><i class="">Shadow-dev</marquee>
             </div>
 
-        <main class="md:my-[50px] my-[20px]  p-3 md:p-6 flex md:flex-row flex-col justify-between " >
+            <div class="md:max-w-[500px] mt-4 md:mt-0 md:px-[55px]">
+                <div class="flex flex-row mb-[20px]">
+                    <div id="clock" class="md:text-[39px]  text-[20px] slide-in border rounded-lg shadow-lg border-slate-500 px-3 py-2 mx-2 text-center font-bold"></div>
+                    <div id="clocks" class="md:text-[39px]  text-[20px] slide-in border rounded-lg shadow-lg border-slate-500 px-3 py-2 mx-2 text-center font-bold"></div>
+                    <div id="clocked" class="md:text-[39px]  text-[20px]  slide-in border rounded-lg shadow-lg border-slate-500 px-3 py-2 mx-2 text-center font-bold"></div>
+                </div>
+                <div id="date" class=" md:mx-1 mx-5 mt-[-12px] md:text-[25px] text-[18px] "></div>
+            </div>
+        
+
+        <main class="md:mt-[20px] my-[20px] p-3 md:p-6 flex md:flex-row flex-col justify-between " >
 
             <div class="max-w-[500px] p-2 md:p-3 my-auto md:ml-9 ">
 
@@ -131,7 +159,7 @@
 
     <span class="mt-[10px]" id="skillz"></span>
 
-        <section class="mx-auto md:ml-4rem" >
+        <section class="mx-auto md:ml-4rem " >
             <h1 class="md:max-w-[700px] max-w-[300px] text-[#f10502] mb-[30px] md:mt-0 mx-auto py-[30px] md:py-[10px] text-center text-[30px] md:text-[48px] px-[30px] md:px-[60px] font-bold">My Skill Sets</h1>
             
             <div class=" flex flex-1 flex-col md:flex-row gap-3 mx-4 md:mx-10 ">
@@ -361,10 +389,11 @@
             </div>
         </section>
 
-       <div class="mt-[40px] max-w-[80%] ">
+       <div class="mt-[40px] max-w-[80%]  ">
         <marquee style= "behavior:alternate; direction: down;" class="hidden md:block "><i class=" ">Developed by Shadow-dev</marquee>
        </div>
 
+      
     </main>
     <br><br><br><br><br>
 

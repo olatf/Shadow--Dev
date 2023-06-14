@@ -47,3 +47,33 @@ function myFunction2() {
     }
 
   }
+
+  function toggleDarkMode() {
+    var html = document.documentElement;
+    html.classList.toggle("dark");
+    console.log("Am clicked")
+  }
+  
+
+  function updateClock() {
+    var now = new Date();
+  
+    var hours = now.getHours();
+    var minutes = now.getMinutes();
+    var seconds = now.getSeconds();
+  
+    // var time = hours + ":" + minutes + ":" + seconds;
+  
+    var clockElement = document.getElementById("clock");
+    var clockElements = document.getElementById("clocks");
+    var clockElemented = document.getElementById("clocked");
+    clockElement.textContent = hours.toString().padStart(2, "0");
+    clockElements.textContent = minutes.toString().padStart(2, "0");
+    clockElemented.textContent = seconds;
+  
+    var dateElement = document.getElementById("date");
+    dateElement.textContent = now.toDateString();
+  }
+  
+  setInterval(updateClock, 1000); // Call updateClock every second (1000ms)
+  

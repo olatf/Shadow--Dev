@@ -7,6 +7,7 @@
 
 module.exports = {
     
+    
     content: [
         "./app/**/*.{js,ts,jsx,tsx}",
         "./pages/**/*.{js,ts,jsx,tsx}",
@@ -16,6 +17,7 @@ module.exports = {
         "./src/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
+
         extended: {
             screens: {
                 '3xl': "1800px",
@@ -28,11 +30,15 @@ module.exports = {
        
             
         },
+
+        darkMode: 'class',
+
         fontFamily: {
             playFairDisplay: ['Playfair Display', 'serif'],
             inter:['Poppins', 'sans-serif']
 
         },
+        
         screens: {
             'sm': '640px',
             // => @media (min-width: 640px) { ... }
